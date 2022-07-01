@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/style/reset.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+
   <title>SPA</title>
 </head>
+
 <body>
+  <!-- topo não modifica -->
   <div class="topo">
     <img src="assets/img/BuzzQuizz.png" alt="Logo">
-</div>
-  <script src="index.js"></script>
+  </div>
+  <main>
+    <!-- Fica todos os quizzes-->
+    <div class="page1">
+      <div class="user-quizz">
+
+      </div>
+      <div class="servidor-quiz">
+      </div>
+    </div>
+    <!-- Visualiza o quiz -->
+    <div class="page2">
+      <div class="banner">
+      </div>
+      <div class="pagina-quiz">
+      </div>
+    </div>
+    <!-- criação quizz -->
+    <div class="cadastro-quizz">
+    </div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./assets/js/pagina-quiz.js"></script>
 </body>
+
 </html>
