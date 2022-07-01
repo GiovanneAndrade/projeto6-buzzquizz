@@ -1,4 +1,4 @@
-const urlApi = "https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes"
+
 
 export default () => {
   const container = document.createElement("div");
@@ -17,6 +17,7 @@ exibição  exibição exibição exibição exibição
   return container; 
 }
 
+const urlApi = "https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes"
 
 let id = 10;
 
