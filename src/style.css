@@ -16,14 +16,16 @@
 }
 .inputs-desktop-8{
   width: 600px;
-  height: 256px;
+  /* height: 256px; */
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   align-items: center;
   gap: 9px;
   padding: 21px 21px 21px 16px;
+  margin-top: 25px;
+  margin-bottom: 85px;
  
 }
 input {
@@ -37,10 +39,47 @@ input {
 ::-webkit-input-placeholder {  /* falta estilizar o input */
   padding-left: 23px;
 }
-.botao-desktop-8{
+/* .botao-desktop-8{
   background-color: #EC362D;
   width: 368px;
   height: 54px;
   color: #FFF5F4;
-
+  border-radius: 15px;
+  font-size: 21px;
+  cursor: pointer;
+} */
+.formulario{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  
 }
+.formulario h1{
+  margin-top: 71px;
+  font-size: 23px;
+}
+a{
+  
+  width: 100%;
+  height: 100%;
+  color: #FFF5F4;
+  text-decoration: none;
+  font-size: 21px;
+  cursor: pointer;
+  padding: 13px 70px; 
+  
+  
+}
+.teste{
+  display: flex;
+  background-color: red;
+  width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
