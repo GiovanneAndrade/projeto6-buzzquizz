@@ -1,15 +1,15 @@
-const urlApi = "https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes"
+const urlApi = "https://mock-api.driven.com.br/api/v6/buzzquizz/quizzes"
 
-let id = 1;
+// let id = 1;
 
 let banner = document.querySelector(".banner");
 let questions = [];
 let answers = [];
 
-getId(id);
+// getId(id);
 
 function getId(id) {
-    screenChange('page2');
+    // screenChange('page2');
     let numero = id;
     let promise = axios.get(`${urlApi}/${numero}`);
     promise.then(carregarQuizz);
