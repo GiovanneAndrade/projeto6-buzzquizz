@@ -59,7 +59,7 @@ input {
   padding-left: 23px;
 }
 
-.botao-desktop-8{
+.botao-desktop-8 {
   background-color: #EC362D;
   width: 368px;
   height: 54px;
@@ -67,8 +67,9 @@ input {
   border-radius: 15px;
   font-size: 21px;
   cursor: pointer;
-   
+
 }
+
 .formulario {
   width: 100%;
   height: 100%;
@@ -152,7 +153,6 @@ a {
   margin-top: 60px;
   height: auto;
   width: 100%;
-  background-color: #88cff8;
 }
 
 .secTitle {
@@ -197,7 +197,6 @@ a {
 /* css página 2 */
 main {
   margin-top: 69px;
-  /* padding: 0 170px; */
 }
 
 .banner {
@@ -250,12 +249,12 @@ header h1 {
 .cards {
   width: 100%;
   height: auto;
-  /* margin-top: 20px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.cards li{
+
+.cards li {
   width: 329px;
   height: auto;
 }
@@ -286,25 +285,10 @@ header h1 {
 /* ------------------------------------------------------------------giovanne */
 
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-h1{
+h1 {
   margin-top: 71px;
 }
 
-.topo{
-  width: 100%;
-  height: 69px;
-  background-color: #EC362Ded;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 3px 5px #d3d3d3;
-  
-}
 /* .inputs-desktop-8{
   width: 600px;
   
@@ -321,7 +305,7 @@ h1{
  
 } */
 input {
-  Width:564px;
+  Width: 564px;
   height: 46px;
   border: solid 1px #D1D1D1;
   box-sizing: border-box;
@@ -329,7 +313,9 @@ input {
   background: #FFFFFF;
   margin-bottom: 14px;
 }
-::-webkit-input-placeholder {  /* falta estilizar o input */
+
+::-webkit-input-placeholder {
+  /* falta estilizar o input */
   padding-left: 23px;
 }
 
@@ -348,12 +334,13 @@ input {
   cursor: pointer;
   padding: 13px 70px; 
 } */
-p{
+p {
   margin: none;
   font-size: 20px;
   width: 94%;
   text-align: left;
 }
+
 /* .teste{
   display: flex;
   background-color: red;
@@ -363,13 +350,15 @@ p{
   align-items: center;
   justify-content: center;
 } */
-.inactive{
-display: none !important;
+.inactive {
+  display: none !important;
 
 }
-.active{
+
+.active {
   display: flex;
 }
+
 .formulario button {
   width: 353px;
   height: 54px;
@@ -378,13 +367,13 @@ display: none !important;
   border-radius: 15px;
   color: #ffffff;
   font-size: 21px;
-} 
+}
 
-.form-group{
+.form-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 .color1 {
@@ -392,35 +381,43 @@ display: none !important;
 }
 
 
-@media (max-width:1100px){
-  .listAll{
+@media (max-width:1100px) {
+  .listAll {
     flex-direction: column;
   }
-  .listAll li, .listAll img{
+
+  .listAll li,
+  .listAll img, .card-quiz {
     width: 100%;
   }
-  main{
-    margin-top: 69px;
-    /* padding: 0 20px; */
-  }
-input{
-  max-width: 100%;
-  
-}
-.formulario button{
-  width: 70%;
-  margin-top: 20px;
-  
-}
-.inputs-desktop-8{
-  width: 95%;
-   
-   margin-left: 7px;
-   margin-top: 18px;
-   
- 
-}
-.teste{
-  width: 100%;
-}
 
+  main {
+    margin-top: 69px;
+    padding: 0 20px;
+  }
+
+  input {
+    max-width: 100%;
+
+  }
+
+  .formulario button {
+    width: 70%;
+    margin-top: 20px;
+
+  }
+
+  .inputs-desktop-8 {
+    width: 95%;
+
+    margin-left: 7px;
+    margin-top: 18px;
+
+
+  }
+
+  .teste {
+    width: 100%;
+  }
+
+}
