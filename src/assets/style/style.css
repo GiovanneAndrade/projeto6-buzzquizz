@@ -30,9 +30,9 @@ body {
   color: #FFFFFF;
 }
 
-.inputs-desktop-8 {
+/* .inputs-desktop-8 {
   width: 600px;
-  /* height: 256px; */
+   
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
@@ -43,7 +43,7 @@ body {
   margin-top: 25px;
   margin-bottom: 85px;
 
-}
+} */
 
 input {
   Width: 564px;
@@ -59,7 +59,7 @@ input {
   padding-left: 23px;
 }
 
-/* .botao-desktop-8{
+.botao-desktop-8{
   background-color: #EC362D;
   width: 368px;
   height: 54px;
@@ -67,7 +67,8 @@ input {
   border-radius: 15px;
   font-size: 21px;
   cursor: pointer;
-} */
+   
+}
 .formulario {
   width: 100%;
   height: 100%;
@@ -81,6 +82,7 @@ input {
 .formulario h1 {
   margin-top: 71px;
   font-size: 23px;
+  margin-bottom: 71px;
 }
 
 a {
@@ -279,23 +281,7 @@ header h1 {
   color: green;
 }
 
-.color1 {
-  color: red;
-}
 
-
-@media (max-width:1100px){
-  .listAll{
-    flex-direction: column;
-  }
-  .listAll li, .listAll img{
-    width: 100%;
-  }
-  main{
-    margin-top: 69px;
-    /* padding: 0 20px; */
-  }
-}
 
 /* ------------------------------------------------------------------giovanne */
 
@@ -378,7 +364,7 @@ p{
   justify-content: center;
 } */
 .inactive{
-display: none;
+display: none !important;
 
 }
 .active{
@@ -400,3 +386,41 @@ display: none;
   align-items: center;
   
 }
+
+.color1 {
+  color: red;
+}
+
+
+@media (max-width:1100px){
+  .listAll{
+    flex-direction: column;
+  }
+  .listAll li, .listAll img{
+    width: 100%;
+  }
+  main{
+    margin-top: 69px;
+    /* padding: 0 20px; */
+  }
+input{
+  max-width: 100%;
+  
+}
+.formulario button{
+  width: 70%;
+  margin-top: 20px;
+  
+}
+.inputs-desktop-8{
+  width: 95%;
+   
+   margin-left: 7px;
+   margin-top: 18px;
+   
+ 
+}
+.teste{
+  width: 100%;
+}
+

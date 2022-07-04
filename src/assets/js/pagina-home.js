@@ -190,8 +190,6 @@ function teste (event){
      localStorage.setItem("QUIZZ", novoQuizzSerializado);
 
 
-     
-
 
     console.log(input, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14,input15,input16,input17,input18, input19, input20, input21, input22, input23, input24, input25, input26, input27, input28, input29, input30, input31, input32, input33, input34, input35, input36, input37, input38, input39, input40, input41, input42)
  }
@@ -242,6 +240,7 @@ function teste (event){
        event.preventDefault() 
       formGroup2.classList.remove('active')
       formGroup2.classList.add('inactive')
+      formGroup3.classList.remove('inactive')
       formGroup3.classList.add('active')
 
    })
@@ -262,41 +261,23 @@ function teste (event){
  const listaSerializada = localStorage.getItem("QUIZZ");
  const QUIZZ = JSON.parse(listaSerializada);
  console.log(QUIZZ)
+
+
+
+// --------------------QUIZZunico
+
+
+ /* const userDiv = document.querySelector('.user-quizz')
+
  
-/*   let receitas = [];
-  const promessa = axios.get('https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes');
-  promessa.then(dadosVoltou);
-
-  function dadosVoltou(resposta){
-     receitas = resposta.data;
-     renderizarReceitas();
-  }
-
-  function renderizarReceitas(){
-  const ul = document.querySelector('.receitas');
-     
-  for(let i = 0; i < receitas.length; i++){
-     ul.innerHTML +=`
-     <li> 
-        
-        
+     userDiv.innerHTML += `
+     <li>
+     <img src="${QUIZZ.image}">
+     <figcaption>${QUIZZ.title}</figcaption>
      </li>
-     <img src="${receitas[i].image}" alt="">
-     <div> ${receitas[i].questions[i].answers[i].text}</div>
-     <div> ${receitas[i].id}</div>
-        `;
-     }
-  }
-  renderizarReceitas();  
+     ` */
 
-
-  // FRANCISCO  */
-
-
-
-
-
-
+ 
 
 const bt = document.getElementById('bt')
 /* document.getElementById('bt').disabled = true */
@@ -307,14 +288,6 @@ const input4 = document.querySelector('.input4')
 
 console.log(input.value)
 
-
-/* input.addEventListener('',() => {
-   if(input.value.length == 0) {
-      document.getElementById('bt').disabled = true
-   } else {
-      document.getElementById('bt').disabled = false
-   }
-}) */
 
 const inputs = document.querySelectorAll('form-group input')
 
