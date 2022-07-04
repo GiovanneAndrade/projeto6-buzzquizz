@@ -1,4 +1,4 @@
-const urlApi = "https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes"
+const urlApi = "https://mock-api.driven.com.br/api/v6/buzzquizz/quizzes"
 
 let id = 9673;
 
@@ -6,9 +6,10 @@ let banner = document.querySelector(".banner");
 let questions = [];
 let answers = [];
 
-getId(id);
+// getId(id);
 
 function getId(id) {
+    // screenChange('page2');
     let numero = id;
     let promise = axios.get(`${urlApi}/${numero}`);
     promise.then(carregarQuizz);
@@ -33,7 +34,7 @@ function carregarQuizz(response) {
                     <header style="background-color:${questions[i].color}">
                         <h1>${questions[i].title}</h1>
                     </header>
-                    <ul>
+                    <ul class="cards">
                         ${criarCards(embaralhar(questions[i].answers))}
                     </ul>
                 </div>`

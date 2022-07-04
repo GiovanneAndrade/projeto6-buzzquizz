@@ -13,31 +13,158 @@
 <body>
   <!-- topo não modifica -->
   <div class="topo">
-    <img src="assets/img/BuzzQuizz.png" alt="Logo">
+    <div class="title">BuzzQuizz</div>
   </div>
   <main>
     <!-- Fica todos os quizzes-->
-    <div class="page1">
+    <div class="page1 hide">
       <div class="user-quizz">
-
+      
+          <h1 class="mainTitle">Você não criou nenhum <br> quizz ainda :(</h1>
+          <button onclick="" class="btnCreate">Criar Quizz</button>
+        
       </div>
-      <div class="servidor-quiz">
+      <div class="servidor-quizz">
+          <h2 class="secTitle">Todos os Quizzes</h2>
+          <ul class="listAll">
+            <!-- <li>
+              <img src="./assets/img/Rectangle 34.png" alt="">
+              <figcaption>Hello guys</figcaption>
+            </li>
+            <li>
+              <img src="./assets/img/Rectangle 34.png" alt="">
+              <figcaption>Hello guys</figcaption>
+            </li>
+            <li>
+              <img src="./assets/img/Rectangle 34.png" alt="">
+              <figcaption>Hello guys</figcaption>
+            </li>
+            <li>
+              <img src="./assets/img/Rectangle 34.png" alt="">
+              <figcaption>Hello guys</figcaption>
+            </li>
+            <li>
+              <img src="./assets/img/Rectangle 34.png" alt="">
+              <figcaption>Hello guys</figcaption>
+            </li>
+            <li>
+              <img src="./assets/img/Rectangle 34.png" alt="">
+              <figcaption>Hello guys</figcaption>
+            </li> -->
+          </ul>
       </div>
     </div>
-    <!-- Visualiza o quiz -->
-    <div class="page2">
+    <!-- Visualiza o quizz -->
+    <div class="page2 hide">
       <div class="banner">
       </div>
       <div class="pagina-quiz">
       </div>
     </div>
     <!-- criação quizz -->
-    <div class="cadastro-quizz">
+    <div class="cadastro-quizz hide">
+
+      <div id="formu" class="formulario"> <!-- ------------------------------------------------------------giovanne -->
+        <h1>Comece pelo começo</h1>
+        <div class="inputs-desktop-8">
+          <form class="inputs-desktop-8">
+                          <div class="form-group inactive "> 
+                            <input class="input" type="text"   placeholder="Título do seu quizz" >
+                            <input class="input2" type="text" placeholder="URL da imagem do seu quizz" >
+                            <input class="input3" type="text" placeholder="Quantidade de perguntas do quizz" >
+                            <input class="input4" type="text" placeholder="Quantidade de níveis do quizz" >
+                            <button id="bt" class="btn-prosseguir1"   >Prosseguir pra criar perguntas</button>
+                           <!--  <button class="btn-prosseguir3 "  type="submit" >enviar</button> -->
+                          </div>
+    
+    
+            
+                      <div class="form-group2 formulario inactive" >
+                        <p> Pergunta 1</p>
+                          <input class="input5" type="text" placeholder="Texto da pergunta" >
+                          <input class="input6" type="text" placeholder="Cor de fundo da pergunta" >
+                          <p>Resposta correta</p>
+                          <input class="input7" type="text" placeholder="Resposta correta" >
+                          <input class="input8" type="text" placeholder="URL da imagem" >
+                          <p> Respostas incorretas</p>
+                          <input class="input9" type="text" placeholder="Resposta incorreta 1" >
+                          <input class="input10" type="text" placeholder="URL da imagem 1" >
+                          <input class="input11" type="text" placeholder="Resposta incorreta 2" >
+                          <input class="input12" type="text" placeholder="URL da imagem 2" >
+                          <input class="input13" type="text" placeholder="Resposta incorreta 3" >
+                          <input class="input14" type="text" placeholder="URL da imagem 3" >
+                          
+                          <p>pergunta 2</p>
+    
+                          <input class="input15" type="text" placeholder="Texto da pergunta" >
+                          <input class="input16" type="text" placeholder="Cor de fundo da pergunta" >
+                          <p>Resposta correta</p>
+                          <input class="input17" type="text" placeholder="Resposta correta" >
+                          <input class="input18" type="text" placeholder="URL da imagem" >
+                          <p> Respostas incorretas</p>
+                          <input class="input19" type="text" placeholder="Resposta incorreta 1" >
+                          <input class="input20" type="text" placeholder="URL da imagem 1" >
+                          <input class="input21" type="text" placeholder="Resposta incorreta 2" >
+                          <input class="input22" type="text" placeholder="URL da imagem 2" >
+                          <input class="input23" type="text" placeholder="Resposta incorreta 3" >
+                          <input class="input24" type="text" placeholder="URL da imagem 3" >
+    
+                          <p>pergunta 3</p>
+    
+                          <input class="input25" type="text" placeholder="Texto da pergunta" >
+                          <input class="input26" type="text" placeholder="Cor de fundo da pergunta" >
+                          <p>Resposta correta</p>
+                          <input class="input27" type="text" placeholder="Resposta correta" >
+                          <input class="input28" type="text" placeholder="URL da imagem" >
+                          <p> Respostas incorretas</p>
+                          <input class="input29" type="text" placeholder="Resposta incorreta 1" >
+                          <input class="input30" type="text" placeholder="URL da imagem 1" >
+                          <input class="input31" type="text" placeholder="Resposta incorreta 2" >
+                          <input class="input32" type="text" placeholder="URL da imagem 2" >
+                          <input class="input33" type="text" placeholder="Resposta incorreta 3" >
+                          <input class="input34" type="text" placeholder="URL da imagem 3" >
+    
+                          <button  class="btn-prosseguir2" onclick="submit" >Prosseguir pra criar perguntas</button>
+                          
+                          <!-- <button class="btn-prosseguir3 "  type="submit" >enviar</button> -->
+                      </div>
+          
+                          <div class="form-group3 formulario inactive" >
+                            <p>nivel 1</p>
+                            <input class="input35" type="text" placeholder="Título do seu quizz" >
+                            <input class="input36" type="text" placeholder="URL da imagem do seu quizz" >
+                            <input class="input37" type="text" placeholder="Quantidade de perguntas do quizz" >
+                            <input class="input38" type="text" placeholder="Quantidade de níveis do quizz" >
+    
+                            <p>nivel 1</p>
+                            <input class="input39" type="text" placeholder="Título do seu quizz" >
+                            <input class="input40" type="text" placeholder="URL da imagem do seu quizz" >
+                            <input class="input41" type="text" placeholder="Quantidade de perguntas do quizz" >
+                            <input class="input42" type="text" placeholder="Quantidade de níveis do quizz" >
+                              
+                            
+                           
+                            <button class="btn-prosseguir3 " type="submit" >enviar</button>
+                          </div>   
+                
+          
+    
+          
+              </div>
+                <div class="form-group4 formulario inactive" >
+                 <button class="btn-prosseguir4" >Prosseguir pra criar perguntas</button> 
+              
+                </div>
+          </form>   <!-- giovanne -->
+
+
     </div>
   </main>
 
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./assets/js/menu-quiz.js"></script>
+  <script src="./assets/js/pagina-home.js"></script>
   <script src="./assets/js/pagina-quiz.js"></script>
 </body>
 
